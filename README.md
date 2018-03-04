@@ -5,16 +5,16 @@ airplay mirroring and airplay casting SDK
 
 ## Use Cases
 
--  Meeting 
+- Meeting 
 Present the way you want to
 
 - Game live  
 Live stream your iOS apps and games 
 
-- Education
+- Education 
 The Classroom in your hands
 
-- Home and Car Entertainment
+- Home and Car Entertainment 
 Stream audio, play movies, music on big screen
 
 
@@ -47,5 +47,3 @@ Supported Platforms
 
 - email: leeoxiang@gmail.com 
 
-
-- 
