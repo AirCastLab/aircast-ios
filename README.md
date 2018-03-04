@@ -6,16 +6,12 @@ airplay mirroring and airplay casting SDK
 ## Use Cases
 
 - Meeting 
-Present the way you want to
 
 - Game live  
-Live stream your iOS apps and games 
 
 - Education 
-The Classroom in your hands
 
 - Home and Car Entertainment 
-Stream audio, play movies, music on big screen
 
 
 ## Feature
