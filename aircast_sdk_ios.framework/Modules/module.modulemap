@@ -1,0 +1,6 @@
+framework module aircast_sdk_ios {
+  umbrella header "aircast_sdk_ios.h"
+
+  export *
+  module * { export * }
+}
