@@ -33,6 +33,22 @@ Supported Platforms
 - iPhone, iPad devices. iOS8/iOS9/iOS10/iOS11 support
 
 
+## How to use 
+
+```
+pod 'aircast', :git => 'https://github.com/AirCastLab/aircast-ios.git'
+```
+
+then 
+
+```
+#import <aircast_sdk_ios/acast_c.h>
+```
+
+## Docs 
+
+** TBD **
+
 ## Tips
 
 - the demo is just for testing, please do not use in production
