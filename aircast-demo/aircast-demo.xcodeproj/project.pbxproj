@@ -14,6 +14,8 @@
 		F01925AD204C281D0097B821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01925AC204C281D0097B821 /* Assets.xcassets */; };
 		F01925B0204C281D0097B821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01925AE204C281D0097B821 /* LaunchScreen.storyboard */; };
 		F01925B3204C281D0097B821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F01925B2204C281D0097B821 /* main.m */; };
+		F060EA67204FEFF0006C19FA /* AAPLEAGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F060EA63204FEFEF006C19FA /* AAPLEAGLLayer.m */; };
+		F060EA68204FEFF0006C19FA /* VideoPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = F060EA66204FEFF0006C19FA /* VideoPacket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		F01925AF204C281D0097B821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F01925B1204C281D0097B821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01925B2204C281D0097B821 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F060EA63204FEFEF006C19FA /* AAPLEAGLLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLEAGLLayer.m; sourceTree = "<group>"; };
+		F060EA64204FEFF0006C19FA /* AAPLEAGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLEAGLLayer.h; sourceTree = "<group>"; };
+		F060EA65204FEFF0006C19FA /* VideoPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPacket.h; sourceTree = "<group>"; };
+		F060EA66204FEFF0006C19FA /* VideoPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPacket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 		F01925A2204C281B0097B821 /* aircast-demo */ = {
 			isa = PBXGroup;
 			children = (
+				F060EA64204FEFF0006C19FA /* AAPLEAGLLayer.h */,
+				F060EA63204FEFEF006C19FA /* AAPLEAGLLayer.m */,
+				F060EA65204FEFF0006C19FA /* VideoPacket.h */,
+				F060EA66204FEFF0006C19FA /* VideoPacket.m */,
 				F01925A3204C281B0097B821 /* AppDelegate.h */,
 				F01925A4204C281B0097B821 /* AppDelegate.m */,
 				F01925A6204C281B0097B821 /* ViewController.h */,
@@ -224,6 +234,8 @@
 			files = (
 				F01925A8204C281B0097B821 /* ViewController.m in Sources */,
 				F01925B3204C281D0097B821 /* main.m in Sources */,
+				F060EA68204FEFF0006C19FA /* VideoPacket.m in Sources */,
+				F060EA67204FEFF0006C19FA /* AAPLEAGLLayer.m in Sources */,
 				F01925A5204C281B0097B821 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +380,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLKRLU8RPY;
 				INFOPLIST_FILE = "aircast-demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.dot.aircast-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,7 +398,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLKRLU8RPY;
 				INFOPLIST_FILE = "aircast-demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.dot.aircast-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
