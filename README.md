@@ -23,7 +23,7 @@ airplay mirroring and airplay casting SDK
 - hardware and sofeware decode support with a low cpu usage
 - audio pcm data out support
 
-Supported Platforms 
+## Supported Platforms 
 
 - Android Phones, Tablets and Set Top Box.
 - ARM Linux based devices e.g. Raspberry Pi3, Ordoid C2 and many more.
@@ -49,10 +49,11 @@ then
 
 ** TBD **
 
+
 ## Tips
 
 - the demo is just for testing, please do not use in production
-- other Platforms SDK can contact us 
+- ** we only release the iOS sdk, other Platforms(android/windows/linux/mac) SDK can contact us **
 
 
 ## Contact & Commercial Licensing
