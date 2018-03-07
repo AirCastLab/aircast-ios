@@ -19,11 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGP-80-FNE">
-                                <rect key="frame" x="112" y="556" width="151" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGP-80-FNE">
+                                <rect key="frame" x="37.5" y="556" width="300" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="151" id="KXV-f2-ewg"/>
-                                    <constraint firstAttribute="height" constant="21" id="djR-9d-JC6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="4XF-If-xVd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="5LT-Kn-mo8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
