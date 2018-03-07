@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A2B98CFC0143448B37630A9 /* libPods-aircast-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F41E6B9B4E285605947F92 /* libPods-aircast-demo.a */; };
 		F01925A5204C281B0097B821 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01925A4204C281B0097B821 /* AppDelegate.m */; };
 		F01925A8204C281B0097B821 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01925A7204C281B0097B821 /* ViewController.m */; };
 		F01925AB204C281B0097B821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01925A9204C281B0097B821 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28F41E6B9B4E285605947F92 /* libPods-aircast-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aircast-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8927950AFB2F95C09A31FD2A /* Pods-aircast-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircast-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-aircast-demo/Pods-aircast-demo.release.xcconfig"; sourceTree = "<group>"; };
+		B9EBD621BCD2E3A956CE8F2F /* Pods-aircast-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircast-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aircast-demo/Pods-aircast-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F01925A0204C281B0097B821 /* aircast-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aircast-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01925A3204C281B0097B821 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F01925A4204C281B0097B821 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2B98CFC0143448B37630A9 /* libPods-aircast-demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC8E03675B22D8BE2D2F6304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9EBD621BCD2E3A956CE8F2F /* Pods-aircast-demo.debug.xcconfig */,
+				8927950AFB2F95C09A31FD2A /* Pods-aircast-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC1BB5A4E0E9899E6D9D0723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F41E6B9B4E285605947F92 /* libPods-aircast-demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0192597204C281B0097B821 = {
 			isa = PBXGroup;
 			children = (
 				F01925A2204C281B0097B821 /* aircast-demo */,
 				F01925A1204C281B0097B821 /* Products */,
+				BC8E03675B22D8BE2D2F6304 /* Pods */,
+				DC1BB5A4E0E9899E6D9D0723 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F01925B6204C281D0097B821 /* Build configuration list for PBXNativeTarget "aircast-demo" */;
 			buildPhases = (
+				6E8C0D100EB6AC862AC27483 /* [CP] Check Pods Manifest.lock */,
 				F019259C204C281B0097B821 /* Sources */,
 				F019259D204C281B0097B821 /* Frameworks */,
 				F019259E204C281B0097B821 /* Resources */,
+				03479E8AC4B2C7E00F07F6EA /* [CP] Embed Pods Frameworks */,
+				F88CC38F414A70A58D9DA43F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03479E8AC4B2C7E00F07F6EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-aircast-demo/Pods-aircast-demo-frameworks.sh",
+				"${PODS_ROOT}/aircast/aircast_sdk_ios.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/aircast_sdk_ios.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aircast-demo/Pods-aircast-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8C0D100EB6AC862AC27483 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aircast-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F88CC38F414A70A58D9DA43F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aircast-demo/Pods-aircast-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F019259C204C281B0097B821 /* Sources */ = {
@@ -281,15 +362,13 @@
 		};
 		F01925B7204C281D0097B821 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EBD621BCD2E3A956CE8F2F /* Pods-aircast-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLKRLU8RPY;
 				INFOPLIST_FILE = "aircast-demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.dot.aircast-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,15 +377,13 @@
 		};
 		F01925B8204C281D0097B821 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8927950AFB2F95C09A31FD2A /* Pods-aircast-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLKRLU8RPY;
 				INFOPLIST_FILE = "aircast-demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.dot.aircast-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
