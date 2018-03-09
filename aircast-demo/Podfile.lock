@@ -1,21 +1,16 @@
 PODS:
-  - aircast (1.0.1)
+  - aircast (1.0.2)
 
 DEPENDENCIES:
-  - aircast (from `https://github.com/AirCastLab/aircast-ios.git`)
+  - aircast (from `../`)
 
 EXTERNAL SOURCES:
   aircast:
-    :git: https://github.com/AirCastLab/aircast-ios.git
-
-CHECKOUT OPTIONS:
-  aircast:
-    :commit: 29d089f81c41d57286f870c7d73fddfe1f2d3cf3
-    :git: https://github.com/AirCastLab/aircast-ios.git
+    :path: ../
 
 SPEC CHECKSUMS:
-  aircast: 8f7375cd156e6d8f7bc68e2cd60f10fdedd6695b
+  aircast: 8696fe02a97afb8def5ec27e43bdda4ca390af70
 
-PODFILE CHECKSUM: f5e1f7809fe8edaf989228e8df8f5868ca28b227
+PODFILE CHECKSUM: d6643c9bd94271b2fb6e7faaea94756138a341f5
 
 COCOAPODS: 1.4.0.rc.1

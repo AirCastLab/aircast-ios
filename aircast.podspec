@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = 'aircast'
-  s.version       = '1.0.1'
+  s.version       = '1.0.2'
   s.summary       = 'airplay mirroring and airplay casting'
   s.homepage      = 'https://github.com/AirCastLab'
   s.author        = { 'LianXiang Liu' => 'leeoxiang@gmail.com' }
