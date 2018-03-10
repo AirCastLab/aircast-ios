@@ -1,36 +1,17 @@
 # aircast-ios
 
-airplay mirroring and airplay casting SDK
-
-
-## Use Cases
-
-- Meeting 
-
-- Game live  
-
-- Education 
-
-- Home and Car Entertainment 
+airplay mirroring and airplay casting SDK  
 
 
 ## Feature
 
 - support sender and receiver on the same device
-- iOS/Android/Windows/linux/Mac support 
 - can work without network
-- yuv data and raw h264 data out support
-- hardware and sofeware decode support with a low cpu usage
-- audio pcm data out support
+- raw h264 data out support
+- hardware decode support with a low cpu usage
+- audio data out support
+- multi sessions support
 
-## Supported Platforms 
-
-- Android Phones, Tablets and Set Top Box.
-- ARM Linux based devices e.g. Raspberry Pi3, Ordoid C2 and many more.
-- x86/x64 based Windows PC and fanless box.
-- X86/x64 based Linux Computer and fanless box.
-- Apple Mac computer.
-- iPhone, iPad devices. iOS8/iOS9/iOS10/iOS11 support
 
 
 ## How to use 
@@ -47,16 +28,94 @@ then
 
 ## Docs 
 
-** TBD **
+
+###  AC_CALLBACK
+
+aircast instance callbacks
+
+```
+static int ac_callback( EACMsgType eType, void* data, size_t dataSize, void* opaque)
+{
+    switch (eType)
+    {
+        case eACMsgType_Error:
+        {
+            // error callback 
+            break;
+        }
+        case eACMsgType_Info:
+            // info callback
+            break;
+        case eACMsgType_Connected:
+            // connected callback
+            break;
+        case eACMsgType_MediaDesc:
+            // media desc callback, include audio and video 
+            break;
+        case eACMsgType_Disconnected:
+            // disconnected clalback
+            break;
+        case eACMsgType_VideoData:
+            // video data callback 
+            break;
+        case eACMsgType_AudioData:
+            // audio data callback
+            break;
+        case eACMsgType_LicenseRequest:
+            // license need request, when the sdk need license 
+            ac_update_license(*license);
+            break;
+    }
+}
+
+```
+
+### ac_setup 
+
+aircat setup  
+
+```
+int ac_setup( AC_CALLBACK listener, void* opaque)
+
+```
+
+### ac_start
+
+```
+int ac_start(const SACStartParams* params)
+```
+
+### ac_stop 
+
+```
+void ac_stop(void);
+
+```
+
+### ac_finalize
+
+```
+void ac_finalize(void);
+```
+
+### ac_update_license
+
+```
+
+void ac_update_license(const char* license);
+
+```
+
 
 
 ## Tips
 
 - the demo is just for testing, please do not use in production
-- ** we only release the iOS sdk, other Platforms(android/windows/linux/mac) SDK can contact us **
+- if you does not provide license, the demo just can work for several minutes
+- we only release the iOS sdk, other Platforms(android/windows/linux/mac) SDK can contact us 
 
 
 ## Contact & Commercial Licensing
 
-- email: leeoxiang@gmail.com 
+- Email: leeoxiang@gmail.com 
 
