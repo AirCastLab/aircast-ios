@@ -8,4 +8,4 @@ target 'aircast-demo' do
   # Pods for aircast-demo
   pod 'aircast', :git => 'https://github.com/AirCastLab/aircast-ios.git'
   #pod 'aircast', :path => '../'
-
+end
