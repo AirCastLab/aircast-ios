@@ -117,5 +117,9 @@ void ac_update_license(const char* license);
 
 ## Contact & Commercial Licensing
 
-- Email: leeoxiang@gmail.com 
+**Please provide your company info and product info**
+
+- Email: leeoxiang@gmail.com
+- QQ: 2462437409
+
 
